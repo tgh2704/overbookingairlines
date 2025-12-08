@@ -122,7 +122,7 @@ with st.sidebar:
     refund_III = st.slider("Refund % if no-show (Class III)", 0.0, 1.0, 0.50, 0.05)
 
     st.header("Search Settings")
-    search_mode = st.radio("Search Mode", ["Fast", "Brute Force Small Range", "Custom Range"])
+    search_mode = st.radio("Search Mode", ["Fast (Coarse → Fine)", "Brute Force Small Range", "Custom Range"])
     
     if search_mode == "Fast (Coarse → Fine)":
         coarse_step_I = st.slider("Coarse step Class I", 1, 6, 3)
@@ -241,3 +241,4 @@ if st.button("Run Overbooking Optimization", type="primary"):
 
 
 st.caption("Built by Trương Gia Hân, Đào Thu Huyền, Trần Phương Anh | Fulbright University Vietnam")
+
